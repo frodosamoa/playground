@@ -48,8 +48,7 @@ char* stringcompare (char a[], char b[]) {
         if (i < shorter) {
             c[i] = a[i] > b[i] ? a[i] : b[i];
         } else {
-            if (alen > blen) { c[i] = a[i]; }
-            else if (blen > alen) { c[i] = b[i]; }
+            c[i] = (alen ? blen) ? a[i] : b[i];
         }
     }
     
@@ -62,8 +61,13 @@ int main (int argc, char *argv[]) {
     char* a = malloc(strlen(argv[1]));
     char* b = malloc(strlen(argv[2]));
 
-    for (i = 0; i < strlen(argv[1]); i++) { a[i] = argv[1][i]; }
-    for (i = 0; i < strlen(argv[2]); i++) { b[i] = argv[2][i]; }
+    for (i = 0; i < strlen(argv[1]); i++) {
+        a[i] = argv[1][i];
+    }
+
+    for (i = 0; i < strlen(argv[2]); i++) {
+        b[i] = argv[2][i];
+    }
 
     char* message = stringcompare(a,b);
     printf("%s\n", message);

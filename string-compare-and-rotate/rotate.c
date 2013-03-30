@@ -31,7 +31,7 @@ char* rotate (char s[], int k) {
      * which will be the new rotated string.
      */
     
-    int i,len;
+    int i, len;
     len = strlen(s);
     char* rotatedString = malloc(len);
     
@@ -59,7 +59,9 @@ int main (int argc, char *argv[]) {
     k = atoi(argv[2]);
     len = (int)strlen(argv[1]);
     char* string = malloc(len);
-    for (i = 0; i < len; i++) { string[i] = argv[1][i]; }
+    for (i = 0; i < len; i++) {
+        string[i] = argv[1][i];
+    }
     
     char* message = rotate(string, k);
     printf("%s\n", message);

@@ -15,8 +15,8 @@ Here is the list of `C` programs that I have:
 
 ##1. Piano Notes & Scales
 
-This project is two fold. One `.c` file named `piano_keys.c` outputs the note frequncies of the keys of an 88-key piano. The second file in the project is named `piano_scales.c`. This program outputs the major and minor scale of any 
+This project is two fold. One `.c` file named `piano_keys.c` outputs the note frequncies of the keys of an 88-key piano. The second file in the project is named `piano_scales.c`. This program outputs the major and minor scale of any note given by the user.
 
 ##2. UTF-32 to UTF-8 Converter
 
-This program, named `utf32toutf8.c`, takes a `.txt` file (or standard input) encoded in UTF-32 LE (little endian) and outputs the corresponding UTF-8 to standard output. There is a file named `utf32toutf8_test.c` which includes unit tests.
+This program, named `utf32toutf8.c`, takes standard input encoded in UTF-32 LE (little endian) and outputs the corresponding UTF-8 to standard output. There is a file named `utf32toutf8_test.c` which includes unit tests.

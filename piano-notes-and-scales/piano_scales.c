@@ -47,7 +47,7 @@ int main (int argc, char *argv[]) {
      */
      
     int i, start, stringScaleLen;
-    stringScaleLen = scaleLen*3;
+    stringScaleLen = scaleLen * 3;
     char* key[] = {argv[1]};
     char* notes[] = {"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"};
     char* majorScale = malloc(scaleLen*3);

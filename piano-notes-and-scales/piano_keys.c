@@ -46,7 +46,7 @@ int main () {
     char* notes[] = {"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"}; 
     int i = 0;
     for (i = 0; i < totalKeys; i++) {
-        printf("%s \t%10.4f \n", notes[i%TTET], A440 * pow (2, (((double)i+1)-49)/TTET));
+        printf("%s \t%10.4f \n", notes[i%TTET], A440 * pow (2, (((double) i + 1) - 49) / TTET));
     } 
     return 0;
 };

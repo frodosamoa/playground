@@ -8,9 +8,9 @@ public class Tuple {
     */
     
     public Tuple (int denominationsLength) {
-        denominationArray = new int[denominationsLength];
+        this.denominationArray = new int[denominationsLength];
         for (int i = 0; i < denominationsLength; i++) {
-            denominationArray[i] = 0;
+            this.denominationArray[i] = 0;
         }
     }
     
@@ -54,10 +54,9 @@ public class Tuple {
         String tupleString = "";
         
         for (int i = 0; i <this.getDenomArray().length; i++) {
+            tupleString += this.get(i);
             if (i == this.getDenomArray().length-1) {
-                tupleString = tupleString + this.get(i);
-            } else {
-                tupleString = tupleString + this.get(i) + ",";
+                tupleString += ",";
             }
         }
         

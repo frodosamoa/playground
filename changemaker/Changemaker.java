@@ -41,10 +41,8 @@ public class Changemaker {
         for (int i = 0; i < arrayOfDenominations.length; i++) {
             int denominationAtIndexI = arrayOfDenominations[i];
             for (int j = 0; j < arrayOfDenominations.length; j++) {
-                if (j != i) {
-                    if (denominationAtIndexI == arrayOfDenominations[j]) {
+                if ((j != i) && (denominationAtIndexI == arrayOfDenominations[j])) {
                         throw new IllegalArgumentException("Duplicate Denomination: " + denominationAtIndexI);
-                    }
                 }
             }
         }

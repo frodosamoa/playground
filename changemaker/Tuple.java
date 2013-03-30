@@ -61,8 +61,7 @@ public class Tuple {
             }
         }
         
-        tupleString = "[" + tupleString + "]";
-        return tupleString;
+        return "[" + tupleString + "]";
     }
     
     /**
@@ -92,10 +91,8 @@ public class Tuple {
        Returns true if a given tuple has less coins, e.g., a better solution.
     */
     
-    public boolean isBetter (Tuple t) {
-        boolean better = false;
-        if (this.sum() < t.sum()) { better = true; } 
-        return better;
+    public boolean isBetter (Tuple t) { 
+        return this.sum() < t.sum();
     }
 
 }

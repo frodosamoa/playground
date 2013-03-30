@@ -55,7 +55,7 @@ public class Tuple {
         
         for (int i = 0; i <this.getDenomArray().length; i++) {
             tupleString += this.get(i);
-            if (i == this.getDenomArray().length-1) {
+            if (i != this.getDenomArray().length-1) {
                 tupleString += ",";
             }
         }

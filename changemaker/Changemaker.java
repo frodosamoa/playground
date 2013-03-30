@@ -9,13 +9,17 @@ public class Changemaker {
            enough arguments.
         */
        
-        if (args.length <= 1) { throw new IllegalArgumentException("Insufficient Data"); }
+        if (args.length <= 1) { 
+            throw new IllegalArgumentException("Insufficient Data");
+        }
         
         /**
            This checks to see if the change to be sorted is a proper amount.
         */
         
-        if (amountOfCents < 1) { throw new IllegalArgumentException("Improper amount: " + amountOfCents); }
+        if (amountOfCents < 1) {
+            throw new IllegalArgumentException("Improper amount: " + amountOfCents);
+        }
         
         /**
            This checks the arguments after the amount of change to be made and
@@ -107,10 +111,9 @@ public class Changemaker {
         */
         
         for (int i = 0; i <arrayOfDenominations.length; i++) {
-            if (i == arrayOfDenominations.length-1) {
-                denomString += arrayOfDenominations[i];
-            } else {
-                denomString += arrayOfDenominations[i] + ", ";
+            denomString += arrayOfDenominations[i];
+            if (i != arrayOfDenominations.length-1) {
+                denomString += ", ";
             }
         }
         

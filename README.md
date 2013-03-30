@@ -21,7 +21,7 @@ This project is two fold. One `.c` file named `piano_keys.c` outputs the note fr
 
 ##2. String Compare & Rotate
 
-There are two files in here that exercise string manipulation. `stringcompare.c` compares string at the individual character level and outputs a new string that contains the characters that are "larger" in each position. By larger, I mean whichever character's integer value is larger. The second program `rotate.c` takes any string and rotates the string any number of times in either direction.
+There are two files in here that exercise string manipulation. `stringcompare.c` compares strings at the individual character level and outputs a new string that contains the characters that are "larger" in each position. By larger, I mean whichever character's integer value is larger. The second program `rotate.c` takes any string and rotates the string any number of characters in either direction.
 
 ##3. UTF-32 to UTF-8 Converter
 
